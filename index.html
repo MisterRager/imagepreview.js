@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>
+            Preview an Image upload!
+        </title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.js" type="text/javascript"></script>
+        <script src="jquery.imagepreview.js" type="text/javascript"></script>
+        <script type="text/javascript">
+            $(function() {
+                var input = $('input');
+                input.preview();
+            });
+        </script>
+    </head>
+    <body>
+        <form>
+            <input type="file" />
+        </form>
+        <img src="" id="preview" />
+    </body>
+</html>
