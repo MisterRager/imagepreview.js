@@ -10,6 +10,8 @@ Or
 
     $('input#preview_input').imagepreview('img#preview_output');
 
+If you end up just letting the script tack an image element onto the dom, you'll probably want to do some work styling it, else it'll look goofy. There's no css or other stuff here to make the results pretty.
+
 It's honestly pretty simple, so I don't expect much development out here unless I run into cases where I would want extra functionality.
 
 License: MIT
