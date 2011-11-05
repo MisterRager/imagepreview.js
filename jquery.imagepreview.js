@@ -7,12 +7,6 @@ console.log(inbox, pre);
                 fr.onload = function(e) {
                     pre.attr('src', e.target.result);
                 };
-/* here for debugging
-                fr.onerror = function(e) {
-                    console.log('error', e);
-                    console.log(e.getMessage());
-                };
-*/
                 fr.readAsDataURL(inbox.files[0]);
             };
         } else {
