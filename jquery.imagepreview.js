@@ -2,7 +2,6 @@
     var change_image = function() {
         if(window.FileReader) {
             return function(inbox, pre) {
-console.log(inbox, pre);
                 var fr = new FileReader();
                 fr.onload = function(e) {
                     pre.attr('src', e.target.result);
@@ -11,9 +10,7 @@ console.log(inbox, pre);
             };
         } else {
             return function(inbox, pre) {
-                if(inbox.val().search('fakepath')) {
-                    //console.log('error - cannot get the image');
-                } else {
+                if(inbox.val().search('fakepath') < 0) {
                     var path = inbox.val();
                     pre.attr('src', path);
                 }
